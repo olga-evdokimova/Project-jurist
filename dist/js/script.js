@@ -175,17 +175,17 @@ new Swiper('.swiper-container', {
         clickable: true,
     },
     slidesPerView: 2,
-    spaceBetween: 30, 
-
-    // breakpoints: {
-    //     '@0.75': {
-    //         slidesPerView: 1,
-    //     },
-    //     '@1.00': {
-    //         slidesPerView: 2,
-    //     },
-    //     '@1.50': {
-    //         slidesPerView: 3,
-    //     }
-    // },
+    spaceBetween: 30,
+    autoHeight: true,
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+        },
+        767: {
+            slidesPerView: 2,
+        },
+        992: {
+            slidesPerView: 2,
+        }
+    },
 });

@@ -501,7 +501,6 @@ body {
 //=====SECTION-OFFER====
 //=====SECTION-EXAMPLE===
 .example {
-	
 	background-color: $bg;
 	&__inner {
 		padding-top: 45px;
@@ -523,12 +522,24 @@ body {
 	}
 }
 .swiper-container {
-	padding-bottom: 50px;
+	padding-bottom: 60px;
+	@media (max-width: 1200px) {
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+	@media (max-width: 767px){
+		padding-top: 30px;
+		padding-bottom: 0;
+	}
+	@media (max-width: 580px){
+		margin-left: 10px;
+		margin-right: 10px;
+	}
 }
+
 .swiper-wrapper {
 }
 .swiper-slide {
-	width: auto;
 	&__item-ask {
 		font-size: 16px;
 		font-weight: 700;
@@ -555,26 +566,31 @@ body {
 		}
 	}
 }
-.swiper-button-prev {
-	color: #fff;
+.swiper-arrow {
 	position: relative;
-	&::after {
-		position: absolute;
-		top: 0;
-		left:0;
-	}
+	max-width: 1200px;
+	margin: 0 auto;
 }
+.swiper-button-prev,
 .swiper-button-next {
 	color: #fff;
-	position: relative;
-	&::after {
-		position: absolute;
-		top: 0;
-		left: 0;
+	position: absolute;
+	top: 230px;
+	@media (max-width: 580px) {
+		display: none;
 	}
+}
+.swiper-button-prev {
+	left: 12px;
+}
+.swiper-button-next {
+	right: 12px;
 }
 .swiper-pagination {
 	bottom: 0;
+	@media (max-width: 767px){
+		top: 0;
+	}
 	&-bullet {
 		width: 20px;
 		height: 20px;
