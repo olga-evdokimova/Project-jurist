@@ -527,16 +527,15 @@ body {
 		margin-left: 40px;
 		margin-right: 40px;
 	}
-	@media (max-width: 767px){
+	@media (max-width: 767px) {
 		padding-top: 30px;
 		padding-bottom: 0;
 	}
-	@media (max-width: 580px){
+	@media (max-width: 580px) {
 		margin-left: 10px;
 		margin-right: 10px;
 	}
 }
-
 .swiper-wrapper {
 }
 .swiper-slide {
@@ -588,7 +587,7 @@ body {
 }
 .swiper-pagination {
 	bottom: 0;
-	@media (max-width: 767px){
+	@media (max-width: 767px) {
 		top: 0;
 	}
 	&-bullet {
@@ -600,3 +599,69 @@ body {
 		}
 	}
 }
+//=====SECTION-EXAMPLE===
+//=====SECTION-ready-problem====
+.ready-problem {
+	background-image: url("../img/white-bg-2.jpg");
+	background-position: center top;
+	background-size: cover;
+	padding: 50px 15px 60px;
+	&__inner {
+		max-width: 680px;
+		margin: 0 auto;
+		background-color: $bg;
+		border-radius: 8px;
+		text-align: center;
+		padding: 35px 40px 43px;
+	}
+	&__title {
+		font-size: 28px;
+		font-weight: 700;
+		line-height: 32px;
+		margin-bottom: 12px;
+	}
+	&__text {
+		font-size: 16px;
+		line-height: 19px;
+		span {
+			font-weight: 700;
+			color: $colhover;
+			position: relative;
+			display: block;
+		margin: 60px 0 35px;
+			&:before {
+				content: " ";
+				width: 30px;
+				height: 30px;
+				background-image: url('../img/icon-check.svg');
+				background-repeat: no-repeat;
+				position: absolute;
+				top: -30px;
+				left: 50%;
+				transform: translateX(-50%);
+
+			}
+		}
+	}
+	&__btn {
+		padding: 17px 40px 16px;
+		background-color: $colhover;
+		border-radius: 8px;
+		color: #fff;
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 22px;
+		width: 90%;
+		display: block;
+		margin: 0 auto;
+		&:hover {
+			background-color: #a3642e;
+		}
+		@media (max-width: 480px){
+			padding-left: 7px;
+			padding-right: 7px;
+			width: 100%;
+		}
+	}
+}
+//=====SECTION-ready-problem====
