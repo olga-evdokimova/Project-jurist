@@ -779,7 +779,7 @@ body {
 .how {
 	text-align: center;
 	padding: 40px 0 100px;
-	@media (max-width: 767px){
+	@media (max-width: 767px) {
 		padding-bottom: 50px;
 	}
 	&__title {
@@ -787,18 +787,17 @@ body {
 		line-height: 32px;
 		font-weight: 700;
 		margin-bottom: 94px;
-		@media (max-width: 767px){
+		@media (max-width: 767px) {
 			margin-bottom: 55px;
 		}
 	}
 	&__inner {
 		display: flex;
 		justify-content: space-between;
-		@media (max-width: 767px){
+		@media (max-width: 767px) {
 			flex-direction: column;
 			align-items: center;
 		}
-		
 	}
 	&__item {
 		max-height: 230px;
@@ -808,12 +807,11 @@ body {
 		flex-direction: column;
 		width: calc(100% / 3 - 10px);
 		max-width: 350px;
-		@media (max-width: 767px){
+		@media (max-width: 767px) {
 			height: 200px;
 			margin: 30px 0;
 			width: 300px;
 		}
-		
 	}
 	&__item:not(:last-child)::after {
 		content: " ";
@@ -824,16 +822,15 @@ body {
 		position: absolute;
 		top: 40px;
 		right: -22px;
-		@media (max-width: 767px){
+		@media (max-width: 767px) {
 			top: 200px;
 			right: 46%;
 			transform: rotate(90deg);
-			
 		}
 	}
 	&__img {
 		padding-bottom: 50px;
-		@media (max-width: 767px){
+		@media (max-width: 767px) {
 			padding-top: 0px;
 			padding-bottom: 30px;
 		}
@@ -843,5 +840,74 @@ body {
 		line-height: 24px;
 		font-weight: 700;
 		max-width: 300px;
+	}
+}
+//===SECTION-REVIEWS===
+.reviews {
+	padding: 47px 0 76px;
+	&__title {
+		text-align: center;
+		font-weight: 700;
+		font-size: 28px;
+		margin: 0 0 51px 0;
+		line-height: 32px;
+	}
+	&__inner {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		@media (max-width: 767px) {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+	&__card {
+		max-width: 540px;
+		width: calc(100% / 2 - 10px);
+		display: flex;
+		background-color: #575757;
+		margin: 0 0 30px 0;
+		padding: 20px 25px;
+		@media (max-width: 767px){
+			width: 100%;
+		}
+		@media (max-width: 480px){
+			display: block;
+		}
+	}
+	&__img {
+	}
+	&__text {
+		font-size: 12px;
+		line-height: 15px;
+		padding-left: 15px;
+		@media (max-width: 480px){
+			padding-left: 0;
+			padding-top: 15px;
+		}
+		span {
+			display: block;
+			font-weight: 700;
+			font-size: 16px;
+			line-height: 19px;
+			color: $colhover;
+			margin-bottom: 15px;
+		}
+	}
+	&__btn {
+		font-size: 18px;
+		line-height: 22px;
+		font-weight: 700;
+		padding: 16px 40px;
+		background-color: $colhover;
+		border-radius: 8px;
+		display: block;
+		color: #fff;
+		max-width: 320px;
+		margin: 10px auto 0;
+		text-align: center;
+		&:hover {
+			background-color: #a3642e;
+		}
 	}
 }
