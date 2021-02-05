@@ -951,7 +951,7 @@ body {
 		line-height: 20px;
 		margin: 0 0 25px 0;
 	}
-	&__input-name, 
+	&__input-name,
 	&__input-tel,
 	&__input-region {
 		height: 40px;
@@ -960,7 +960,7 @@ body {
 		border-radius: 8px;
 		margin-bottom: 15px;
 	}
-	
+
 	&__input-textarea {
 		border-radius: 8px;
 		margin-bottom: 15px;
@@ -981,6 +981,54 @@ body {
 		text-align: center;
 		&:hover {
 			background-color: #a3642e;
+		}
+		@media (max-width: 480px) {
+			padding: 16px 10px;
+		}
+	}
+}
+//===FOOTER=========
+.footer {
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 40px 0;
+		border-bottom: 1px solid #424242;
+	}
+	&__logo {
+		text-align: center;
+		margin-bottom: 20px;
+		span {
+			font-weight: 900;
+			font-size: 16px;
+			line-height: 19px;
+			display: block;
+			color: #424242;
+		}
+	}
+	&__contact {
+	}
+	&__menu {
+	}
+	&__menu-list {
+		display: flex;
+		justify-content: center;
+		padding: 20px;
+		@media (max-width: 767px) {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	&__menu-link {
+		padding: 0 20px;
+		color: #777;
+		&:hover {
+			text-decoration: underline;
+		}
+		@media (max-width: 767px) {
+			padding-bottom: 10px;
 		}
 	}
 }
