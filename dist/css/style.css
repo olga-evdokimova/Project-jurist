@@ -482,6 +482,7 @@ body {
   overflow: auto;
   border-radius: 8px;
   padding: 15px;
+  resize: none;
 }
 
 .ask-form__example {
@@ -947,6 +948,79 @@ body {
   background-color: #a3642e;
 }
 
+.help-form {
+  background-image: url(../img/white-bg-3.jpg);
+  background-position: center top;
+  background-size: cover;
+  padding: 56px 0 64px 0;
+}
+
+.help-form__inner {
+  background: rgba(24, 24, 24, 0.6);
+  padding: 30px 72px 63px 72px;
+  max-width: 620px;
+  margin: 0 auto;
+  border-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.help-form__title {
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  line-height: 29px;
+  margin: 0 0 15px 0;
+}
+
+.help-form__text {
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  line-height: 20px;
+  margin: 0 0 25px 0;
+}
+
+.help-form__input-name,
+.help-form__input-tel,
+.help-form__input-region {
+  height: 40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.help-form__input-textarea {
+  border-radius: 8px;
+  margin-bottom: 15px;
+  resize: none;
+  overflow: auto;
+  padding: 15px;
+  height: 120px;
+}
+
+.help-form__input-btn {
+  border-radius: 8px;
+  padding: 16px 40px;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 700;
+  background-color: #d99860;
+  display: block;
+  color: #fff;
+  text-align: center;
+}
+
+.help-form__input-btn:hover {
+  background-color: #a3642e;
+}
+
 @media (max-width: 1200px) {
   .header-menu__list-link {
     padding: 15px 5px 16px;
@@ -1125,6 +1199,10 @@ body {
   .reviews__card {
     width: 100%;
   }
+
+  .help-form {
+    padding: 36px 0;
+  }
 }
 
 @media (max-width: 580px) {
@@ -1186,6 +1264,10 @@ body {
     padding-left: 0;
     padding-top: 15px;
   }
+
+  .help-form__inner {
+    padding: 30px 36px 40px 36px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -1194,6 +1276,14 @@ body {
   }
 }
 
+@media (max-width: 320px) {
+  .help-form__inner {
+    padding: 30px 20px;
+  }
+}
+
 .webp .ask{ background-image: url(../img/white-bg-1.webp); }
 
 .webp .ready-problem{ background-image: url(../img/white-bg-2.webp); }
+
+.webp .help-form{ background-image: url(../img/white-bg-3.webp); }
