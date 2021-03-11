@@ -1,10 +1,10 @@
 const a = document.querySelector('.header-top__burger');
 const b = document.querySelector('.header-top__burger-item');
-const c = document.querySelector('.header-menu');
+const c = document.querySelector('.menu-content');
 //клик по кнопке для скрытия/показа фильтра и изменения иконки
 a.onclick = function () {
     b.classList.toggle('header-top__burger-active');
-    c.classList.toggle('header-menu-active');
+    c.classList.toggle('menu-content_active');
 };
 //==================================
 "use strict";

@@ -326,14 +326,14 @@ body {
   transition: top 0.2s linear, transform 0.2s ease-in 0.2s, -webkit-transform 0.2s ease-in 0.2s;
 }
 
-.header-menu {
+.menu-content {
   background: #2c2c2c;
   position: absolute;
   width: 100%;
   top: 70px;
 }
 
-.header-menu__list {
+.menu-content__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -343,7 +343,7 @@ body {
           justify-content: space-between;
 }
 
-.header-menu__list-item {
+.menu-content__list-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -357,17 +357,17 @@ body {
   position: relative;
 }
 
-.header-menu__list-link {
+.menu-content__list-link {
   font-size: 11px;
   text-align: center;
   padding: 15px 15px 16px;
 }
 
-.header-menu__list-link:hover {
+.menu-content__list-link:hover {
   color: #d99860;
 }
 
-.header-menu__list-link:hover:after {
+.menu-content__list-link:hover:after {
   content: "";
   display: block;
   height: 4px;
@@ -394,11 +394,15 @@ body {
   padding-bottom: 45px;
 }
 
+.content-hidden {
+  display: none;
+}
+
 .content-menu {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 50%;
           flex: 1 1 50%;
-  padding: 30px 25px 33px 25px;
+  padding: 30px 15px 33px;
 }
 
 .content-menu__title {
@@ -411,6 +415,7 @@ body {
 .content-menu__text {
   font-size: 16px;
   line-height: 20px;
+  margin-bottom: 10px;
 }
 
 .content-menu__text span {
@@ -423,9 +428,9 @@ body {
 }
 
 .content-menu__list-item {
-  margin-top: 20px;
+  margin-top: 30px;
   position: relative;
-  padding-left: 40px;
+  padding-left: 45px;
 }
 
 .content-menu__list-item:before {
@@ -1069,7 +1074,7 @@ body {
 }
 
 @media (max-width: 1200px) {
-  .header-menu__list-link {
+  .menu-content__list-link {
     padding: 15px 5px 16px;
   }
 
@@ -1114,7 +1119,7 @@ body {
     display: block;
   }
 
-  .header-menu {
+  .menu-content {
     position: fixed;
     z-index: 10;
     width: 250px;
@@ -1128,7 +1133,7 @@ body {
     overflow-y: scroll;
   }
 
-  .header-menu-active {
+  .menu-content_active {
     -webkit-transition: -webkit-transform 0.5s ease-in;
     transition: -webkit-transform 0.5s ease-in;
     -o-transition: transform 0.5s ease-in;
@@ -1139,7 +1144,7 @@ body {
             transform: translateX(0%);
   }
 
-  .header-menu-active .header-menu__list {
+  .menu-content_active .menu-content__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

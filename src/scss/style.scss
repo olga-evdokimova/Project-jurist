@@ -244,6 +244,7 @@ body {
 			left: 0px;
 			transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
 		}
+		
 	}
 
 	&__burger-text {
@@ -268,7 +269,7 @@ body {
 		transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 	}
 }
-.header-menu {
+.menu-content {
 	background: $bg;
 	position: absolute;
 	width: 100%;
@@ -283,10 +284,10 @@ body {
 		transform: translateX(150%);
 		bottom: 0;
 		overflow-y: scroll;
-		&-active {
+		&_active {
 			transition: transform 0.5s ease-in;
 			transform: translateX(-0%);
-			.header-menu__list {
+			.menu-content__list {
 				flex-direction: column;
 			}
 		}
@@ -347,12 +348,13 @@ body {
 		}
 	}
 }
-.ask-content {
+.content-hidden {
+	display: none;
 }
 //повторяющиеся блоки
 .content-menu {
 	flex: 1 1 50%;
-	padding: 30px 25px 33px 25px;
+	padding: 30px 15px 33px;
 	@media (max-width: 480px) {
 		padding: 20px 0;
 	}
@@ -369,6 +371,7 @@ body {
 	&__text {
 		font-size: 16px;
 		line-height: 20px;
+		margin-bottom: 10px;
 		span {
 			color: $colhover;
 		}
@@ -378,9 +381,9 @@ body {
 		line-height: 19px;
 	}
 	&__list-item {
-		margin-top: 20px;
+		margin-top: 30px;
 		position: relative;
-		padding-left: 40px;
+		padding-left: 45px;
 		@media (max-width: 480px) {
 			margin-top: 10px;
 		}
