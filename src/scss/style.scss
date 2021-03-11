@@ -312,19 +312,17 @@ body {
 		}
 		&:hover {
 			color: $colhover;
-		}
-	}
-	&__active-link {
-		&:after {
-			content: "";
-			display: block;
-			height: 4px;
-			width: 100%;
-			background: #d99860;
-			position: absolute;
-			left: 0;
-			bottom: 0;
-			right: 0;
+			&:after {
+				content: "";
+				display: block;
+				height: 4px;
+				width: 100%;
+				background: #d99860;
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				right: 0;
+			}
 		}
 	}
 }
