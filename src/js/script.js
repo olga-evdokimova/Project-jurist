@@ -189,3 +189,22 @@ new Swiper('.swiper-container', {
         }
     },
 });
+//==============================
+//==== tabs==================
+let wrapContent = document.querySelector('.wrap-content')
+let menuContentListItem = wrapContent.querySelectorAll('.menu-content__list-item')
+let contentMenu = wrapContent.querySelectorAll('.content-menu')
+
+function change(arr, i) {
+    arr.forEach(item => {
+        item.forEach(i => { i.classList.remove('is-active') })
+        item[i].classList.add('is-active')
+    })
+}
+
+for (let i = 0; i < menuContentListItem.length; i++) {
+    menuContentListItem[i].addEventListener('click', () => {
+        change([menuContentListItem, contentMenu], i)
+    })
+}
+
