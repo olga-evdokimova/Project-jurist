@@ -1091,17 +1091,15 @@ body {
   }
 
   .header-top__item {
-    text-align: center;
-    padding: 15px 20px;
-    width: 100%;
+    padding: 15px 20px 15px 50px;
   }
 
   .header-top__item:before {
-    display: none;
+    top: 18px;
+    left: 20px;
   }
 
   .header-top__phone {
-    width: 100%;
     text-align: center;
     padding: 15px 20px;
   }
