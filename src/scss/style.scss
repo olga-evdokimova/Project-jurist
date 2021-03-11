@@ -420,12 +420,14 @@ body {
 		&:before {
 			content: " ";
 			width: 30px;
-			height: 30px;
-			background-image: url("../img/icon-check.svg");
+			height: 32px;
+			background-image: url("../img/timer.png");
 			background-repeat: no-repeat;
+			background-size: cover;
 			position: absolute;
 			top: 0px;
 			left: 0px;
+			
 		}
 	}
 	&__textarea {
