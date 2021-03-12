@@ -414,8 +414,8 @@ body {
 .content-menu {
   display: none;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 50%;
-          flex: 1 1 50%;
+      -ms-flex: 1 1 60%;
+          flex: 1 1 60%;
   padding: 27px 15px 15px;
 }
 
@@ -464,15 +464,14 @@ body {
 
 .ask-form {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 50%;
-          flex: 1 1 50%;
+      -ms-flex: 1 1 40%;
+          flex: 1 1 40%;
 }
 
 .ask-form__inner {
   background: rgba(24, 24, 24, 0.6);
   border-radius: 8px;
   padding: 30px 25px 33px 25px;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -534,6 +533,16 @@ body {
   display: block;
   font-weight: 700;
   margin-bottom: 5px;
+}
+
+.ask-form__name,
+.ask-form__phone,
+.ask-form__location {
+  width: 100%;
+  overflow: auto;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
 }
 
 .ask-form__btn {
@@ -1208,6 +1217,17 @@ body {
     padding-top: 0;
   }
 
+  .ask-form__inner {
+    margin: 0 auto;
+    max-width: 500px;
+  }
+
+  .ask-form__name,
+  .ask-form__phone,
+  .ask-form__location {
+    padding: 10px;
+  }
+
   .swiper-container {
     padding-top: 30px;
     padding-bottom: 0;
@@ -1215,6 +1235,14 @@ body {
 
   .swiper-pagination {
     top: 0;
+  }
+
+  .ready-problem {
+    padding: 30px 15px 40px;
+  }
+
+  .ready-problem__inner {
+    max-width: 500px;
   }
 
   .expert-card {
