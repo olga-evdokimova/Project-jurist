@@ -496,6 +496,12 @@ body {
 			background-color: #a3642e;
 		}
 	}
+	&__hidden{
+		display: none;
+	}
+	&__active{
+		display: none;
+	}
 }
 
 //=====SECTION-OFFER====

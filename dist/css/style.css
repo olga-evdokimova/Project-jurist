@@ -559,6 +559,14 @@ body {
   background-color: #a3642e;
 }
 
+.ask-form__hidden {
+  display: none;
+}
+
+.ask-form__active {
+  display: none;
+}
+
 .offer {
   background-color: #000;
 }

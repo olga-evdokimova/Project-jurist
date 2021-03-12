@@ -1,10 +1,10 @@
-const a = document.querySelector('.header-top__burger');
-const b = document.querySelector('.header-top__burger-item');
-const c = document.querySelector('.menu-content');
+const headerBurger = document.querySelector('.header-top__burger');
+const burgerItem = document.querySelector('.header-top__burger-item');
+const menuContent = document.querySelector('.menu-content');
 //клик по кнопке для скрытия/показа фильтра и изменения иконки
-a.onclick = function () {
-    b.classList.toggle('header-top__burger-active');
-    c.classList.toggle('menu-content_active');
+headerBurger.onclick = function () {
+    burgerItem.classList.toggle('header-top__burger-active');
+    menuContent.classList.toggle('menu-content_active');
 };
 //==================================
 "use strict";
