@@ -196,6 +196,7 @@ new Swiper('.swiper-container', {
 //==============================
 
 // ===========табы===============================
+
 // выбор пункта меню со сменой контента для каждого путкта.
 let wrapContent = document.querySelector('.wrap-content')
 let menuContentListItem = wrapContent.querySelectorAll('.menu-content__list-item')
@@ -218,14 +219,20 @@ for (let i = 0; i < menuContentListItem.length; i++) {
 
 
 //=== модальное окно для reviews-btn "задать свой вопрос"
+
 //находим нужные элементы:кнопка модалки,модалка,кнопка закрытия
 const modalBtn = document.querySelector('#modal-btn');
+const modalBtn2 = document.querySelector('#modal-btn2');
 const modal = document.querySelector('#modal');
 const modalClose = document.querySelector('#modal-close');
 
 
 // прослушиваем клик по кнопке Открытия , и открываем модалку
 modalBtn.addEventListener('click', function () {
+    modal.classList.remove('modal-hidden');
+
+});
+modalBtn2.addEventListener('click', function () {
     modal.classList.remove('modal-hidden');
 
 });

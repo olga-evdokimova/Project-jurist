@@ -1086,6 +1086,7 @@ body {
 }
 //=== модальное окно для reviews-btn "задать свой вопрос"
 .modal-ask {
+	z-index: 99;
 	position: fixed;
 	top: 0;
 	bottom: 0;
