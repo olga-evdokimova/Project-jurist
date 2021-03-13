@@ -1,9 +1,9 @@
-const headerBurger = document.querySelector('.header-top__burger');
-const burgerItem = document.querySelector('.header-top__burger-item');
+const headerBurger = document.querySelector('.header__burger');
+const burgerItem = document.querySelector('.header__burger-item');
 const menuContent = document.querySelector('.menu-content');
 //клик по кнопке для скрытия/показа фильтра и изменения иконки
 headerBurger.onclick = function () {
-    burgerItem.classList.toggle('header-top__burger-active');
+    burgerItem.classList.toggle('header__burger-active');
     menuContent.classList.toggle('menu-content_active');
 };
 //==================================
@@ -190,7 +190,7 @@ new Swiper('.swiper-container', {
     },
 });
 //==============================
-//==== tabs==================
+// выбор пункта меню со сменой контента для каждого путкта.
 let wrapContent = document.querySelector('.wrap-content')
 let menuContentListItem = wrapContent.querySelectorAll('.menu-content__list-item')
 let contentMenu = wrapContent.querySelectorAll('.content-menu')
@@ -207,4 +207,29 @@ for (let i = 0; i < menuContentListItem.length; i++) {
         change([menuContentListItem, contentMenu], i)
     })
 }
+//=================================
+//=== модальное окно для reviews-btn "задать свой вопрос"
+//находим нужные элементы:кнопка модалки,модалка,кнопка закрытия
+const modalBtn = document.querySelector('#modal-btn');
+const modal = document.querySelector('#modal');
+const modalClose = document.querySelector('#modal-close');
 
+
+// прослушиваем клик по кнопке Открытия , и открываем модалку
+modalBtn.addEventListener('click', function () {
+    modal.classList.remove('modal-hidden');
+
+});
+
+// прослушиваем клик по кнопке Закрытия , и закрываем модалку
+modalClose.addEventListener('click', function () {
+    modal.classList.add('modal-hidden');
+});
+//прослушиваем клик по всему фейду вокруг модального окна
+modal.addEventListener('click', function () {
+    modal.classList.add('modal-hidden');
+});
+//запрещаем отслеживание клика по модальному окну а только вокруг него для того чтоб не закрывалось все при вводе данных в форму модального окна
+modal.querySelector('.modal-ask__form').addEventListener('click', function (e) {
+    e.stopPropagation();
+});

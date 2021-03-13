@@ -124,14 +124,13 @@ body {
 	margin: 0 auto;
 	padding: 0 15px;
 }
+
 //===HEADER=====
+
 .header {
-	position: relative;
-}
-.header-top {
 	background: #181818;
 	position: fixed;
-	z-index: 10;
+	z-index: 100;
 	width: 100%;
 	&__inner {
 		height: 70px;
@@ -253,7 +252,7 @@ body {
 		}
 	}
 }
-.header-top__burger-active {
+.header__burger-active {
 	background-color: transparent;
 	&::before {
 		transform: rotate(45deg);
@@ -421,7 +420,7 @@ body {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		@media (max-width: 767px){
+		@media (max-width: 767px) {
 			margin: 0 auto;
 			max-width: 500px;
 		}
@@ -456,6 +455,10 @@ body {
 		border-radius: 8px;
 		padding: 15px;
 		resize: none;
+		margin-bottom: 10px;
+		@media (max-width: 767px) {
+			height: 100px;
+		}
 	}
 	&__example {
 		font-size: 11px;
@@ -472,17 +475,18 @@ body {
 		}
 	}
 
-	&__name , &__phone ,&__location{
+	&__name,
+	&__phone,
+	&__location {
 		width: 100%;
 		overflow: auto;
 		border-radius: 8px;
 		padding: 15px;
 		margin-bottom: 15px;
-		@media (max-width: 767px){
+		@media (max-width: 767px) {
 			padding: 10px;
 		}
 	}
-	
 
 	&__btn {
 		width: 100%;
@@ -496,10 +500,8 @@ body {
 			background-color: #a3642e;
 		}
 	}
-	&__hidden{
-		display: none;
-	}
-	&__active{
+
+	&__hidden {
 		display: none;
 	}
 }
@@ -556,12 +558,14 @@ body {
 		font-weight: 700;
 		max-width: 800px;
 		margin: 0 auto 25px;
+		padding: 0 10px;
 	}
 	&__text {
 		text-align: center;
 		font-size: 16px;
 		margin: 0 auto 50px auto;
 		line-height: 19px;
+		padding: 0 10px;
 	}
 }
 .swiper-container {
@@ -649,7 +653,7 @@ body {
 	background-position: center top;
 	background-size: cover;
 	padding: 50px 15px 60px;
-	@media (max-width: 767px){
+	@media (max-width: 767px) {
 		padding: 30px 15px 40px;
 	}
 	&__inner {
@@ -659,7 +663,7 @@ body {
 		border-radius: 8px;
 		text-align: center;
 		padding: 35px 40px 43px;
-		@media (max-width: 767px){
+		@media (max-width: 767px) {
 			max-width: 500px;
 		}
 	}
@@ -1078,4 +1082,36 @@ body {
 			padding-bottom: 10px;
 		}
 	}
+}
+//=== модальное окно для reviews-btn "задать свой вопрос"
+.modal-ask {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(24, 24, 24, 0.6);
+	&__form {
+		min-width: 300px;
+		position: absolute;
+		bottom: 150px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	&__inner {
+		background-color: #000;
+		span {
+			background-image: url("../img/Close.svg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			width: 30px;
+			height: 30px;
+			position: absolute;
+			top: 6px;
+			right: 6px;
+		}
+	}
+}
+.modal-hidden {
+	display: none;
 }
