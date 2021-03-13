@@ -7,6 +7,9 @@ headerBurger.onclick = function () {
     menuContent.classList.toggle('menu-content_active');
 };
 //==================================
+
+
+// для перемещения блоков в любую часть страницы
 "use strict";
 
 function DynamicAdapt(type) {
@@ -162,6 +165,7 @@ DynamicAdapt.prototype.arraySort = function (arr) {
 
 const da = new DynamicAdapt("max");
 da.init();
+//=====================================
 
 // Инициализируем  Swiper
 new Swiper('.swiper-container', {
@@ -190,6 +194,8 @@ new Swiper('.swiper-container', {
     },
 });
 //==============================
+
+// ===========табы===============================
 // выбор пункта меню со сменой контента для каждого путкта.
 let wrapContent = document.querySelector('.wrap-content')
 let menuContentListItem = wrapContent.querySelectorAll('.menu-content__list-item')
@@ -208,6 +214,9 @@ for (let i = 0; i < menuContentListItem.length; i++) {
     })
 }
 //=================================
+
+
+
 //=== модальное окно для reviews-btn "задать свой вопрос"
 //находим нужные элементы:кнопка модалки,модалка,кнопка закрытия
 const modalBtn = document.querySelector('#modal-btn');
@@ -233,3 +242,4 @@ modal.addEventListener('click', function () {
 modal.querySelector('.modal-ask__form').addEventListener('click', function (e) {
     e.stopPropagation();
 });
+//=============================================
