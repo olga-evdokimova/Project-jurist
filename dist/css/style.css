@@ -741,8 +741,9 @@ body {
   content: " ";
   width: 30px;
   height: 30px;
-  background-image: url("../img/icon-check.svg");
+  background-image: url("../img/timer.png");
   background-repeat: no-repeat;
+  background-size: contain;
   position: absolute;
   top: -30px;
   left: 50%;
@@ -1469,5 +1470,7 @@ body {
 .webp .ask-form__text:before{ background-image: url(../img/timer.webp); }
 
 .webp .ready-problem{ background-image: url(../img/white-bg-2.webp); }
+
+.webp .ready-problem__text span:before{ background-image: url(../img/timer.webp); }
 
 .webp .help-form{ background-image: url(../img/white-bg-3.webp); }

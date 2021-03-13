@@ -687,8 +687,9 @@ body {
 				content: " ";
 				width: 30px;
 				height: 30px;
-				background-image: url("../img/icon-check.svg");
+				background-image: url("../img/timer.png");
 				background-repeat: no-repeat;
+				background-size: contain;
 				position: absolute;
 				top: -30px;
 				left: 50%;
