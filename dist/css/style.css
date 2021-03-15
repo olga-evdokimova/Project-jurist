@@ -550,6 +550,9 @@ body {
   font-size: 18px;
   font-weight: 700;
   color: #fff;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .ask-form__btn:hover {
@@ -763,6 +766,9 @@ body {
   width: 90%;
   display: block;
   margin: 0 auto;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .ready-problem__btn:hover {
@@ -808,6 +814,9 @@ body {
   display: block;
   max-width: 320px;
   margin: 0 auto;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .expert__btn:hover {
@@ -992,6 +1001,9 @@ body {
   width: 100%;
   margin: 10px auto 0;
   text-align: center;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .reviews__btn:hover {
@@ -1065,6 +1077,9 @@ body {
   display: block;
   color: #fff;
   text-align: center;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .help-form__input-btn:hover {

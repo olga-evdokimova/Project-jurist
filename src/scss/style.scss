@@ -497,9 +497,11 @@ body {
 		font-size: 18px;
 		font-weight: 700;
 		color: #fff;
+		transition: all 0.3s;
 		&:hover {
 			background-color: #a3642e;
 		}
+		
 	}
 
 	&__hidden {
@@ -708,6 +710,7 @@ body {
 		width: 90%;
 		display: block;
 		margin: 0 auto;
+		transition: all 0.3s;
 		&:hover {
 			background-color: #a3642e;
 		}
@@ -767,6 +770,7 @@ body {
 		display: block;
 		max-width: 320px;
 		margin: 0 auto;
+		transition: all 0.3s;
 		@media (max-width: 500px) {
 			padding: 16px 20px;
 		}
@@ -962,6 +966,7 @@ body {
 		width: 100%;
 		margin: 10px auto 0;
 		text-align: center;
+		transition: all 0.3s;
 		&:hover {
 			background-color: #a3642e;
 		}
@@ -1034,6 +1039,7 @@ body {
 		display: block;
 		color: #fff;
 		text-align: center;
+		transition: all 0.3s;
 		&:hover {
 			background-color: #a3642e;
 		}
@@ -1042,6 +1048,7 @@ body {
 		}
 	}
 }
+
 //===FOOTER=========
 .footer {
 	&__inner {
@@ -1125,4 +1132,3 @@ body {
 	display: none;
 	
 }
-
