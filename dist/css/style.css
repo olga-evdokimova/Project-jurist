@@ -563,6 +563,11 @@ body {
   display: none;
 }
 
+.requred-error {
+  -webkit-box-shadow: 0 0 0 3px red;
+          box-shadow: 0 0 0 3px red;
+}
+
 .offer {
   background-color: #000;
 }

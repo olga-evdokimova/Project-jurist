@@ -15,7 +15,7 @@ let path = {
 	src: {
 		html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
 		css: source_folder + "/scss/style.scss",
-		js: source_folder + "/js/script.js",
+		js: source_folder + "/js/**/*.js",
 		img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
 		fonts: source_folder + "/fonts/*.ttf",
 	},
@@ -172,9 +172,19 @@ task('deploy', function () {
 		.pipe(ghPages());
 });
 
+task('js', ()=> {
+	return js()
+})
+
+task('watch', () => {
+	return gulp.parallel(watchFiles, browserSync)
+})
+
 function fontsStyle(params) {
 	let file_content = fs.readFileSync(source_folder + '/scss/fonts.scss');
+	
 	if (file_content == '') {
+		console.log("xjnf ltkftv")
 		fs.writeFile(source_folder + '/scss/fonts.scss', '', cb);
 		return fs.readdir(path.build.fonts, function (err, items) {
 			if (items) {
@@ -190,7 +200,13 @@ function fontsStyle(params) {
 			}
 		})
 	}
+	console.log("rjytw")
+	return Promise.resolve()
 }
+
+task('ff', () => {
+	return fontsStyle();
+})
 
 function cb() {
 
