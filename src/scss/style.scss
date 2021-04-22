@@ -421,6 +421,7 @@ body {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+		min-height: 526px;
 		@media (max-width: 767px) {
 			margin: 0 auto;
 			max-width: 500px;
